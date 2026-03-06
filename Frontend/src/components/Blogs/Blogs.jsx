@@ -16,7 +16,7 @@ export default function BlogPage() {
     const fetchPosts = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://public-api.wordpress.com/wp/v2/sites/obsidiansixblogs.wordpress.com/posts?per_page=100&_embed');
+        const response = await fetch('https://public-api.wordpress.com/wp/v2/sites/socialai9.wordpress.com/posts?per_page=100&_embed');
         const data = await response.json();
 
         if (!Array.isArray(data)) {

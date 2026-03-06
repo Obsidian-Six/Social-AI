@@ -35,7 +35,7 @@ export default function BlogPostClient() {
 
                 // Fetch the specific post by slug
                 const postRes = await fetch(
-                    `https://public-api.wordpress.com/wp/v2/sites/obsidiansixblogs.wordpress.com/posts?slug=${slug}&_embed&cb=${cb}`
+                    `https://public-api.wordpress.com/wp/v2/sites/socialai9.wordpress.com/posts?slug=${slug}&_embed&cb=${cb}`
                 );
                 const posts = await postRes.json();
 
@@ -44,7 +44,7 @@ export default function BlogPostClient() {
 
                     // Fetch "More Blogs" for the bottom section
                     const allRes = await fetch(
-                        `https://public-api.wordpress.com/wp/v2/sites/obsidiansixblogs.wordpress.com/posts?_embed&per_page=4&cb=${cb}`
+                        `https://public-api.wordpress.com/wp/v2/sites/socialai9.wordpress.com/posts?_embed&per_page=4&cb=${cb}`
                     );
                     const allPosts = await allRes.json();
                     if (Array.isArray(allPosts)) {
