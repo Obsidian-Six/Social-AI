@@ -25,7 +25,7 @@ export default function BlogSidebarForm() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch("https://sheetdb.io/api/v1/emxktcawb03m7", {
+      const response = await fetch("https://sheetdb.io/api/v1/u48fhasr82ao7", {
         method: "POST",
         headers: {
           "Accept": "application/json",
